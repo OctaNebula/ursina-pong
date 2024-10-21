@@ -80,12 +80,12 @@ def update():
 
     if (ball.x-0.1) <= paddleLeft.x and (ball.y>=paddleLeft.y-0.5 and ball.y<=paddleLeft.y+0.5):
         velocityX = -1*(velocityX)
-        velocityY= -1*(velocityY)
+        velocityY= 1*(velocityY)
         velocityX+=random.random()
         velocityY+=random.random()
     if (ball.x+0.1) >= paddleRight.x and (ball.y>=paddleRight.y-0.5 and ball.y<=paddleRight.y+0.5):
         velocityX = -1*(velocityX)
-        velocityY = -1*(velocityY)
+        velocityY = 1*(velocityY)
         velocityX-=random.random()
         velocityY-=random.random()
         
